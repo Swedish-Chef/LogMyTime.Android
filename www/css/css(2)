@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Vibur';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Vibur'), url(https://themes.googleusercontent.com/static/fonts/vibur/v4/e2dR39U2ZC6nUGtJrQCN9Q.woff) format('woff');
+}

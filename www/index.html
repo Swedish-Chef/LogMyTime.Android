@@ -23,12 +23,90 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
+		    <link rel="shortcut icon" href="https://localhost/LogMyTime.WebApp/content/assets/ico/favicon.png">
+    <link href="https://localhost/LogMyTime.WebApp/Content/site.css" rel="stylesheet">
+<link href="https://localhost/LogMyTime.WebApp/Content/print.css" rel="stylesheet">
+
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet">
+	<!-- Google Fonts -->
+    <link href="./index_files/css" rel="stylesheet" type="text/css">
+	<link href="./index_files/css(1)" rel="stylesheet" type="text/css">
+	<link href="./index_files/css(2)" rel="stylesheet" type="text/css">
         <title>Hello World</title>
     </head>
     <body>
+		<!-- Start Header / Include -->
+<div class="container no-print" id="header">
+	<div class="headerLogo col-md-2">
+		<div id="logo">
+			<h1><a href="https://localhost/LogMyTime.WebApp/" id="A1">ePunchClock</a></h1>
+		</div>
+	</div>
+	<div class="headerAd col-md-5"> <!--Advert Here--> </div>
+	<div class="headerNav col-md-5">
+		<ul class="nav nav-pills">
+			<li><a href="https://localhost/LogMyTime.WebApp/Home/Support">Support <span class="glyphicon glyphicon-book"></span></a></li>
+				<li><a href="https://localhost/LogMyTime.WebApp/Account/Login">Login<span class="glyphicon glyphicon-log-in"></span></a></li>
+							<li><a href="https://localhost/LogMyTime.WebApp/?lang=en#" class="language-select">Language</a></li>
+		</ul>
+	</div>		
+</div>
+	<div class="languages">
+
+		<ul>
+			<li class="eng"><a href="./index_files/index.htm">English</a></li>
+			<li class="swe"><a href="https://localhost/LogMyTime.WebApp/?lang=se">Svenska</a></li>
+		</ul>
+	</div>
+<!-- End Header -->
+
+		<div class="container">
+				<div>
+					
+    <div class="row">
+        <div class="well">
+            <div class="col-lg-8 col-md-12 col-sm-12 well well-inverted left">
+	            <header>
+		            <h3>LogMyTime is...</h3>
+	            </header>
+				<div class="width-55 left">
+	            <blockquote>
+		            <p>
+			            The simple solution for keeping track of your time, especially when you bill for it.
+		            </p>
+		            <p>
+			            We pride ourselves in delivering an elegant solution, which will help you effortlessly log <em>your</em> time, and let you get back to making money.
+		            </p>
+		            <small>Team LogMyTime</small>
+	            </blockquote>
+				</div>
+				    <div class="width-45 left">
+					    <a class="btn btn-success btn-lg col-lg-5 col-md-5 col-sm-12 col-xs-12" href="https://localhost/LogMyTime.WebApp/Account/Login">Start Logging <i class="icon icon-bolt">&nbsp;</i></a>
+					    <div class="clear">&nbsp;</div>
+						<a class="btn btn-info btn-lg col-lg-5 col-md-5 col-sm-12 col-xs-12" href="https://localhost/LogMyTime.WebApp/Home/About">Find Out More <i class="icon icon-question-sign">&nbsp;</i></a>
+					</div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+				</div>
+			
+		</div>
+		<div class="container no-print">
+			<div class="row">
+				<div class="col-md-3"><p>© 2013 Fenariogroup</p></div>
+				<div class="col-md-6"><a href="https://localhost/LogMyTime.WebApp/">Home</a> | <a href="https://localhost/LogMyTime.WebApp/Home/Policy">Privacy Policy</a> | <a href="https://localhost/LogMyTime.WebApp/Home/Terms">Terms &amp; Conditions</a></div>
+				<div class="col-md-3"><a href="https://localhost/LogMyTime.WebApp/Home/Contact" title="Contact Us">Contact Us</a></div>
+			</div>
+			<div class="row no-print">
+				<div class="col-md-12 alignCenter"></div>
+			</div>
+		</div>
         <div class="app">
-            <h1>PhoneGap</h1>
-			<p>JHKJHKJH</p>
+            <h1>ePunchClock</h1>
+			<p></p>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
@@ -39,5 +117,36 @@
         <script type="text/javascript">
             app.initialize();
         </script>
+		<script src="./index_files/jquery-ui-1.10.3.js"></script>
+<script src="./index_files/jquery.dataTables.min.js"></script>
+
+		<script src="./index_files/bootstrap-tooltip.js"></script>
+<script src="./index_files/bootstrap-affix.js"></script>
+<script src="./index_files/bootstrap-alert.js"></script>
+<script src="./index_files/bootstrap-button.js"></script>
+<script src="./index_files/bootstrap-carousel.js"></script>
+<script src="./index_files/bootstrap-collapse.js"></script>
+<script src="./index_files/bootstrap-dropdown.js"></script>
+<script src="./index_files/bootstrap-modal.js"></script>
+<script src="./index_files/bootstrap-popover.js"></script>
+<script src="./index_files/bootstrap-scrollspy.js"></script>
+<script src="./index_files/bootstrap-tab.js"></script>
+<script src="./index_files/bootstrap-transition.js"></script>
+<script src="./index_files/bootstrap-typeahead.js"></script>
+
+		
+		<script>
+			$(document).ready(function () {
+				var languageSelector = $(".languages")
+
+				$(".language-select").mouseover(function () {
+					languageSelector.toggle();
+				});
+
+				$(languageSelector).mouseout(function () {;
+					languageSelector.toggle();
+				});
+			});
+		</script>
     </body>
 </html>
