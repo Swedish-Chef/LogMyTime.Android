@@ -1,0 +1,44 @@
+@media print {
+  #invoicefilter,
+  #header {
+    visibility: hidden;
+  }
+  .left-menu,
+  .right-menu,
+  .leftNav {
+    visibility: hidden;
+  }
+  .panel-heading,
+  .panel-title {
+    visibility: hidden;
+  }
+  .btn {
+    visibility: hidden;
+  }
+  .back-link {
+    visibility: hidden;
+  }
+  .top {
+    visibility: hidden;
+  }
+  h2 {
+    visibility: hidden;
+  }
+  .main {
+    width: 100%;
+  }
+  .printable {
+    float: left;
+  }
+  .table {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .no-print {
+    visibility: hidden;
+    display: none;
+  }
+}
+
